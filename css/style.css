@@ -16,7 +16,8 @@
 body {
     display: flex;
     /*justify-content: center;*/
-    margin: 0;  /* Ajout zou le 05/03/2024 15:53:30 */
+    margin: 0;
+    /* Ajout zou le 05/03/2024 15:53:30 */
 }
 
 .main-container {
@@ -69,7 +70,7 @@ header {
 }
 
 header .logo {
-    height: 20px;
+    width: 100px;
     margin-top: 40px;
 }
 
@@ -123,33 +124,37 @@ h2.titre-populaire {
     display: none;
 }
 
+.filtre {
+    display: flex;
+}
+
 .filtre h4 {
-  font-size: 20px;
-  display: inline;
+    font-size: 20px;
 }
 
 .filtre ul {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 0;
-  margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .filtre ul li {
-  display: inline;
-  margin-left: 10px;
-  font-weight: 700;
-  border: solid 3px rgb(205, 202, 202);
-  padding: 0 20px 0 0;
-  margin-top: 10px;
-  border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    font-weight: 700;
+    border: solid 3px rgb(205, 202, 202);
+    padding: 0 20px 0 0;
+    margin-top: 10px;
+    border-radius: 200px;
 }
 
 .filtre ul li:hover {
-  cursor: pointer;
-  background: #DEEBFF;
-  transition-duration: 0.25s;
+    cursor: pointer;
+    background: #DEEBFF;
+    transition-duration: 0.25s;
 }
 
 .icon-du-filtre {
@@ -481,18 +486,56 @@ footer h3 {
         padding: 0;
     }
 
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu-naviguation {
+        width: 100%;
+        gap: 0;
+        margin-top: 20px;
+    }
+
+    .nav-menu-naviguation a {
+        width: 50%;
+        text-align: center;
+        border-top: none;
+    }
+
+
+    .header-menu-naviguation:hover {
+        color: #0065FC;
+        border-top-color: transparent;
+        border-bottom: 1px solid #0065FC;
+    }
+
+    .information-container {
+        padding: 0 40px;
+    }
+
     /* gestion filtre */
     .validation-recherche-bouton {
         display: none;
+        flex-direction: column;
+    }
+
+    .filtre ul {
+        justify-content: space-between;
+    }
+
+    .filtre ul li {
+        width: 48%;
+        box-sizing: border-box;
+        margin-left: 0;
     }
 
     .validation-recherche-icone {
 
-        color: white; 
         background-color: #0065FC;
-        /*  background: #0065FC; */
-        border:  1px;
-        border-radius: 0px 20px 20px 0px;
+        /* background: #0065FC; */
+        border: #0065FC solid 1px;
+        border-radius: 10px 10px 10px 10px;
         padding: 10px;
         height: 25px;
         width: 27px;
@@ -500,6 +543,10 @@ footer h3 {
         justify-content: center;
         align-items: center;
         box-shadow: 0px 4px 4px 0px #00000040;
+    }
+
+    .validation-recherche-icone i {
+        color: white
     }
 
     .hebergements-and-populaires {
