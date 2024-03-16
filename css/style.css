@@ -94,8 +94,8 @@ a {
 }
 
 .header-menu-naviguation:hover {
-    color: #0065FC;
-    border-top-color: #0065FC;
+    color: var(--main-color);
+    border-top-color: var(--main-color);
 }
 
 a.header-menu-naviguation {
@@ -152,12 +152,12 @@ h2.titre-populaire {
 
 .filtre ul li:hover {
     cursor: pointer;
-    background: #DEEBFF;
+    background: var(--filter-bg-color);
     transition-duration: 0.25s;
 }
 
 .icon-du-filtre {
-    color: #0065FC;
+    color: var(--main-color);
     margin-right: 10px;
     padding: 20px 0 20px 20px;
 }
@@ -181,7 +181,7 @@ h2.titre-populaire {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #0065FC;
+    color: var(--main-color);
 }
 
 /* Fin de la Gestion du Filtre */
@@ -198,15 +198,15 @@ h2.titre-populaire {
 
 .icone-localisation {
     color: black;
-    background-color: #F2F2F2;
-    border: #F2F2F2 solid 2px;
+    background-color: var(--main-bg-color);
+    border: var(--main-bg-color) solid 2px;
     border-radius: 15px 0 0 15px;
     padding: 22px 14px;
 }
 
 .recherche {
     color: black;
-    border: #F2F2F2 solid 1px;
+    border: var(--main-bg-color) solid 1px;
     padding: 10px;
 }
 
@@ -219,8 +219,8 @@ h2.titre-populaire {
 
 .validation-recherche-bouton {
     color: white;
-    background-color: #0065FC;
-    border: #0065FC solid 1px;
+    background-color: var(--main-color);
+    border: var(--main-color) solid 1px;
     border-radius: 0px 15px 15px 0px;
     padding: 10px;
     height: 25px;
@@ -393,7 +393,7 @@ button {
 /* Début Gestion du Footer */
 footer {
     display: flex;
-    background-color: #F2F2F2;
+    background-color: var(--main-bg-color);
     padding: 0 20px 20px 20px;
     margin-top: 30px;
     flex-wrap: nowrap;
@@ -429,7 +429,7 @@ footer h3 {
 }
 
 .etoile-desactiver {
-    color: #F2F2F2;
+    color: var(--main-bg-color);
 }
 
 /* Fin Gestion du Footer */
@@ -510,9 +510,9 @@ footer h3 {
 
 
     .header-menu-naviguation:hover {
-        color: #0065FC;
+        color: var(--main-color);
         border-top-color: transparent;
-        border-bottom: 1px solid #0065FC;
+        border-bottom: 1px solid var(--main-color);
     }
 
     .information-container {
@@ -545,9 +545,8 @@ footer h3 {
 
     .validation-recherche-icone {
 
-        background-color: #0065FC;
-        /* background: #0065FC; */
-        border: #0065FC solid 1px;
+        background-color: var(--main-color);
+        border: var(--main-color) solid 1px;
         border-radius: 10px 10px 10px 10px;
         padding: 10px;
         height: 25px;
@@ -609,7 +608,7 @@ footer h3 {
 
     .activities-card img {
         width: 100%;
-        height: 100;
+        height: 141px;
     }
 
     footer {
